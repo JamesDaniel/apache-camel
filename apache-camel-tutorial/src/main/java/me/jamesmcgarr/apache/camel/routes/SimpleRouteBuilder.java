@@ -18,17 +18,13 @@ public class SimpleRouteBuilder extends RouteBuilder {
 
     @Override
     public void configure() throws Exception {
-        from("timer://foo?fixedRate=true&period=60000")
+        from("file:///home/user/IdeaProjects/apache-camel/apache-camel-tutorial/data/")
                 .process(new Processor() {
                     public void process(Exchange exchange) throws Exception {
-                        System.out.println("This has been read: ");
-                        File body = (File) exchange.getIn().getBody();
-                        Scanner sc = new Scanner(body);
-                        while (sc.hasNextLine()) {
-                            System.out.println("This has been read: " + sc.nextLine());
-                        }
+                        System.out.println("A new file has been dropped into directory /home/user/IdeaProjects/apache-camel/apache-camel-tutorial/data/");
+                        System.out.println("    The file will be moved to /home/user/IdeaProjects/apache-camel/apache-camel-tutorial/data-out/");
                     }
                 })
-                .to("file://home/jmcgarr/apache-camel/apache-camel-tutorial/data-out");
+                .to("file:///home/user/IdeaProjects/apache-camel/apache-camel-tutorial/data-out/");
     }
 }
