@@ -5,6 +5,7 @@
  - camel-java/ -> https://examples.javacodegeeks.com/enterprise-java/apache-camel/apache-camel-hello-world-example/
  - camel-spring/ -> https://examples.javacodegeeks.com/enterprise-java/apache-camel/apache-camel-hello-world-example/
  - camel-spring-timer/ -> https://examples.javacodegeeks.com/enterprise-java/apache-camel/apache-camel-hello-world-example/
+ - camel-spring-boot/ -> https://github.com/apache/camel/tree/master/examples/camel-example-spring-boot
  
 ## Further Reading
 
