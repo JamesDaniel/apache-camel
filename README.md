@@ -6,6 +6,7 @@
  - camel-spring/ -> https://examples.javacodegeeks.com/enterprise-java/apache-camel/apache-camel-hello-world-example/
  - camel-spring-timer/ -> https://examples.javacodegeeks.com/enterprise-java/apache-camel/apache-camel-hello-world-example/
  - camel-spring-boot/ -> https://github.com/apache/camel/tree/master/examples/camel-example-spring-boot
+ - camel-spring-boot-livereload/ -> https://github.com/apache/camel/tree/master/examples/camel-example-spring-boot-live-reload
  
 ## Further Reading
 
